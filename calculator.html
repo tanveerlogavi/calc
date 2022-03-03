@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> href="styl.css"> </title>
+	<link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+
+<body>
+
+			<table class="a" style="background-color: black; margin-top: 80px; border-radius: 10px;" align="center">
+				<tr>
+					<td colspan="3"><input type="text" id="res" name="name" style="font-size: 15px ;" ></td>
+					<td	>	<button type="button" class="a" onmouseover="ac()">AC</button>
+					</td>
+		            </tr>
+		            <tr>
+		            	<td><button type="button" class="c1" onclick="show('1')">1</button></td>
+		            	<td><button type="button" class="c1" onclick="show('2')">2</button></td>
+		            	<td><button type="button" class="c1" onclick="show('3')">3</button></td>
+		            	<td><button type="button" class="c1" onclick="show('+')">+</button></td>
+		           </tr>
+			           <tr>
+			           	<td><button type="button" class="t" onclick="show('4')">4</button></td>
+			           	<td><button type="button" class="t" onclick="show('5')">5</button></td>
+			           	<td><button type="button" class="t" onclick="show('6')">6</button></td>
+			           	<td><button type="button" class="t" onclick="show('-')">-</button></td>
+			            </tr>
+			            <tr>
+			            	<td><button type="button" class="t1" onclick="show('7')">7</button></td>
+			            	<td><button type="button" class="t1" onclick="show('8')">8</button></td>
+			            	<td><button type="button" class="t1" onclick="show('9')">9</button></td>
+			            	<td><button type="button" class="t1" onclick="show('*')">*</button></td>
+			            	
+
+			            </tr>
+			            <tr>
+			            	<td><button type="button" class="h" onclick="show('0')">0</button></td>
+			            	<td><button type="button" class="h" onclick="show('(')">(</button></td>
+			            	<td><button type="button" class="h" onclick="show(')')">)</button></td>
+			            	<td><button type="button" class="h" onclick="show('/')">/</button></td>
+
+			            </tr>
+			            <tr>
+			            	<td><button type="button" class="b" onclick="show('%')">%</button></td>
+			            	<td><button type="button" class="b" onclick="show('^')">^</button></td>
+			            	<td><button type="button" class="b" onclick="show('.')">.</button></td>
+			            	<td><button type="button" class="b" onclick="show('=')">=</button></td>
+			            </tr>
+						</table>
+						<script >
+							function  ac() {
+
+								document.getElementById("res").value="";
+								}
+								function show(input){
+									document.getElementById("res").value+=input;
+								}
+								function cal(){
+									let answer=eva1(document.getElementById("res").value);
+									document.getElementById("res").value=a
+								}
+
+			              	</script>
+					
+
+
+
+</body>
+</html>
